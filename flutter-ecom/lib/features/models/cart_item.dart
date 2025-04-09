@@ -16,4 +16,15 @@ class CartModel {
       'quantity': quantity,
     };
   }
+
+  CartModel copyWith({
+    String? productID,
+    double? price,
+    int? quantity,
+  }) {
+    return CartModel(
+        productID: productID ?? this.productID,
+        price: price ?? this.price,
+        quantity: quantity ?? this.quantity);
+  }
 }

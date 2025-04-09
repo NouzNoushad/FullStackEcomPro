@@ -22,9 +22,9 @@ class CreateCartResponse {
 class Data {
   String? id;
   String? productId;
-  int? price;
+  double? price;
   int? quantity;
-  int? totalPrice;
+  double? totalPrice;
   String? createdAt;
   String? updatedAt;
 
@@ -40,9 +40,9 @@ class Data {
   Data.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     productId = json['product_id'];
-    price = json['price'];
+    price = json['price'].toDouble();
     quantity = json['quantity'];
-    totalPrice = json['total_price'];
+    totalPrice = json['total_price'].toDouble();
     createdAt = json['created_at'];
     updatedAt = json['updated_at'];
   }

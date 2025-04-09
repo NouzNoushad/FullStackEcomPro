@@ -55,7 +55,7 @@ class CartItem extends StatelessWidget {
                         height: 5,
                       ),
                       Text(
-                        '\$${cartProduct?.product?.price}',
+                        '\$${cartProduct?.cart?.price}',
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -90,13 +90,15 @@ class CartItem extends StatelessWidget {
           child: ClipRRect(
             borderRadius: BorderRadius.only(
               bottomRight: Radius.circular(8),
+              topLeft: Radius.circular(8),
             ),
             child: Container(
               height: 28,
               decoration: BoxDecoration(
                   border: Border.all(color: AppColors.primaryColor),
                   borderRadius: BorderRadius.only(
-                    bottomRight: Radius.circular(50),
+                    bottomRight: Radius.circular(8),
+                    topLeft: Radius.circular(8),
                   )),
               child: Row(
                 children: [
@@ -118,7 +120,7 @@ class CartItem extends StatelessWidget {
                     alignment: Alignment.center,
                     decoration: BoxDecoration(color: AppColors.whiteColor),
                     child: Text(
-                      '1',
+                      cartProduct?.cart?.quantity.toString() ?? '',
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ),

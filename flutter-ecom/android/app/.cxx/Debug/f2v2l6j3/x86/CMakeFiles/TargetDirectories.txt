@@ -1,0 +1,2 @@
+C:/Users/acer/Desktop/Flutter/my_projects/FullStack/EcomPro/flutter-ecom/android/app/.cxx/Debug/f2v2l6j3/x86/CMakeFiles/edit_cache.dir
+C:/Users/acer/Desktop/Flutter/my_projects/FullStack/EcomPro/flutter-ecom/android/app/.cxx/Debug/f2v2l6j3/x86/CMakeFiles/rebuild_cache.dir
